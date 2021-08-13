@@ -1291,6 +1291,24 @@ Source: http://www.analog.com/UploadedFiles/Data_Sheets/288945048AD7C7019_20_1_2
 <text x="-2.54" y="-6.35" size="1.27" layer="27">&gt;VALUE</text>
 <rectangle x1="-3.81" y1="-3.81" x2="3.81" y2="3.81" layer="39"/>
 </package>
+<package name="DIL8">
+<description>&lt;b&gt;Dual In Line Package&lt;/b&gt;</description>
+<wire x1="5.08" y1="2.921" x2="-5.08" y2="2.921" width="0.1524" layer="21"/>
+<wire x1="-5.08" y1="-2.921" x2="5.08" y2="-2.921" width="0.1524" layer="21"/>
+<wire x1="5.08" y1="2.921" x2="5.08" y2="-2.921" width="0.1524" layer="21"/>
+<wire x1="-5.08" y1="2.921" x2="-5.08" y2="1.016" width="0.1524" layer="21"/>
+<wire x1="-5.08" y1="-2.921" x2="-5.08" y2="-1.016" width="0.1524" layer="21"/>
+<wire x1="-5.08" y1="1.016" x2="-5.08" y2="-1.016" width="0.1524" layer="21" curve="-180"/>
+<pad name="PIN1" x="-3.81" y="-3.81" drill="0.8128" shape="long" rot="R90"/>
+<pad name="PIN2" x="-1.27" y="-3.81" drill="0.8128" shape="long" rot="R90"/>
+<pad name="PIN7" x="-1.27" y="3.81" drill="0.8128" shape="long" rot="R90"/>
+<pad name="PIN8" x="-3.81" y="3.81" drill="0.8128" shape="long" rot="R90"/>
+<pad name="PIN3" x="1.27" y="-3.81" drill="0.8128" shape="long" rot="R90"/>
+<pad name="PIN4" x="3.81" y="-3.81" drill="0.8128" shape="long" rot="R90"/>
+<pad name="PIN6" x="1.27" y="3.81" drill="0.8128" shape="long" rot="R90"/>
+<pad name="PIN5" x="3.81" y="3.81" drill="0.8128" shape="long" rot="R90"/>
+<text x="-2.54" y="0" size="1.27" layer="21">lm393</text>
+</package>
 </packages>
 <symbols>
 <symbol name="14PIN_NAND">
@@ -2802,7 +2820,7 @@ RS品番885-1171</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="MCP2562">
+<deviceset name="MCP2562" prefix="IC" uservalue="yes">
 <gates>
 <gate name="G$1" symbol="MCP2562" x="0" y="0"/>
 </gates>
@@ -2817,6 +2835,21 @@ RS品番885-1171</description>
 <connect gate="G$1" pin="VDD" pad="P$3"/>
 <connect gate="G$1" pin="VIO" pad="P$5"/>
 <connect gate="G$1" pin="VSS" pad="P$2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="" package="DIL8">
+<connects>
+<connect gate="G$1" pin="CANH" pad="PIN6"/>
+<connect gate="G$1" pin="CANL" pad="PIN7"/>
+<connect gate="G$1" pin="RXD" pad="PIN4"/>
+<connect gate="G$1" pin="STBY" pad="PIN5"/>
+<connect gate="G$1" pin="TXD" pad="PIN1"/>
+<connect gate="G$1" pin="VDD" pad="PIN3"/>
+<connect gate="G$1" pin="VIO" pad="PIN8"/>
+<connect gate="G$1" pin="VSS" pad="PIN2"/>
 </connects>
 <technologies>
 <technology name=""/>
