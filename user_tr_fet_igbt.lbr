@@ -218,6 +218,33 @@ sot23-6も含まれる</description>
 <text x="0" y="-7.62" size="1.27" layer="27">&gt;VALUE</text>
 <rectangle x1="0" y1="-3.81" x2="5.08" y2="0" layer="39"/>
 </package>
+<package name="D2PACK" urn="urn:adsk.eagle:footprint:29392/1" locally_modified="yes">
+<description>&lt;b&gt;D2PACK&lt;/b&gt;&lt;p&gt;
+INTERNATIONAL RECTIFIER, irg4bc15ud-s.pdf &lt;br&gt;
+TO263</description>
+<wire x1="-5.1308" y1="-4.0894" x2="5.1308" y2="-4.0894" width="0.254" layer="21"/>
+<wire x1="5.1308" y1="-4.0894" x2="5.1308" y2="4.445" width="0.254" layer="51"/>
+<wire x1="5.1308" y1="4.445" x2="3.1242" y2="5.8166" width="0.254" layer="51"/>
+<wire x1="3.1242" y1="5.8166" x2="-3.3782" y2="5.8166" width="0.254" layer="51"/>
+<wire x1="-3.3782" y1="5.8166" x2="-5.1308" y2="4.699" width="0.254" layer="51"/>
+<wire x1="-5.1308" y1="4.699" x2="-5.1308" y2="4.445" width="0.254" layer="51"/>
+<wire x1="-5.1308" y1="4.445" x2="-5.1308" y2="-4.0894" width="0.254" layer="51"/>
+<wire x1="-5.1308" y1="4.445" x2="5.1308" y2="4.445" width="0.254" layer="51"/>
+<wire x1="-5.1308" y1="-4.0894" x2="-5.1308" y2="-2.3114" width="0.254" layer="21"/>
+<wire x1="5.1308" y1="-4.0894" x2="5.1308" y2="-2.3114" width="0.254" layer="21"/>
+<smd name="1" x="-2.54" y="-8.89" dx="2.0828" dy="3.81" layer="1"/>
+<smd name="3" x="2.54" y="-8.89" dx="2.0828" dy="3.81" layer="1"/>
+<smd name="2" x="0" y="2.54" dx="11.43" dy="8.89" layer="1"/>
+<text x="-5.588" y="7.239" size="1.27" layer="25">&gt;NAME</text>
+<text x="-3.81" y="-3.429" size="1.27" layer="27">&gt;VALUE</text>
+<rectangle x1="-3.0988" y1="-9.525" x2="-1.9812" y2="-8.1026" layer="51"/>
+<rectangle x1="-3.2512" y1="-8.1534" x2="-1.8288" y2="-6.731" layer="51"/>
+<rectangle x1="-3.2512" y1="-6.731" x2="-1.8288" y2="-4.2418" layer="21"/>
+<rectangle x1="1.9812" y1="-9.525" x2="3.0988" y2="-8.1026" layer="51"/>
+<rectangle x1="1.8288" y1="-8.1534" x2="3.2512" y2="-6.731" layer="51"/>
+<rectangle x1="1.8288" y1="-6.731" x2="3.2512" y2="-4.2418" layer="21"/>
+<rectangle x1="-0.7112" y1="-6.731" x2="0.7112" y2="-4.2418" layer="21"/>
+</package>
 </packages>
 <symbols>
 <symbol name="FET">
@@ -485,6 +512,29 @@ sot23-6も含まれる</description>
 <connect gate="G$1" pin="6_D1" pad="PIN6"/>
 <connect gate="G$1" pin="7_D2" pad="PIN7"/>
 <connect gate="G$1" pin="8_D2" pad="PIN8"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="SKI03021" prefix="TR" uservalue="yes">
+<description>SANKEN FET &lt;b&gt;SKI03021&lt;/b&gt; &lt;br&gt;
+Max Drain to Source Voltage : 30V&lt;br&gt;
+Max Gate to Source Voltage : 20V&lt;br&gt;
+Max Continuous Drain Current : 85A&lt;br&gt;
+&lt;br&gt;
+秋月電子　通販コード : I-08473</description>
+<gates>
+<gate name="G$1" symbol="FET" x="-2.54" y="0"/>
+</gates>
+<devices>
+<device name="" package="D2PACK">
+<connects>
+<connect gate="G$1" pin="PIN1_G" pad="1"/>
+<connect gate="G$1" pin="PIN2_D" pad="2"/>
+<connect gate="G$1" pin="PIN3_S" pad="3"/>
 </connects>
 <technologies>
 <technology name=""/>
