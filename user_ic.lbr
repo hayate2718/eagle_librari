@@ -2858,6 +2858,9 @@ RS品番885-1171</description>
 </devices>
 </deviceset>
 <deviceset name="ACPL227" prefix="IC" uservalue="yes">
+<description>&lt;b&gt;bloadcom Phototransistor Optocoupler&lt;/b&gt;&lt;br&gt;
+
+汎用品　t_on,off = 3us 程度</description>
 <gates>
 <gate name="G$1" symbol="ACPL227" x="0" y="0"/>
 </gates>
