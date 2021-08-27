@@ -470,6 +470,26 @@ digikey[S9194-ND]</description>
 <wire x1="2.35" y1="1" x2="3.35" y2="1" width="0.127" layer="21"/>
 <wire x1="3.35" y1="1" x2="3.35" y2="0" width="0.127" layer="21"/>
 </package>
+<package name="VL_2P">
+<wire x1="-6.35" y1="3.81" x2="-4.9" y2="3.81" width="0.127" layer="21"/>
+<wire x1="5.6" y1="3.81" x2="7.05" y2="3.81" width="0.127" layer="21"/>
+<wire x1="7.05" y1="3.81" x2="7.05" y2="-4.39" width="0.127" layer="21"/>
+<wire x1="-6.35" y1="3.81" x2="-6.35" y2="-4.39" width="0.127" layer="21"/>
+<wire x1="-6.35" y1="-4.39" x2="-4.95" y2="-4.39" width="0.127" layer="21"/>
+<wire x1="-3.45" y1="-4.39" x2="4.15" y2="-4.39" width="0.127" layer="21"/>
+<wire x1="7.05" y1="-4.39" x2="5.65" y2="-4.39" width="0.127" layer="21"/>
+<wire x1="-4.95" y1="-6.19" x2="-3.45" y2="-6.19" width="0.127" layer="21"/>
+<wire x1="4.15" y1="-6.19" x2="5.65" y2="-6.19" width="0.127" layer="21"/>
+<wire x1="-4.95" y1="-4.39" x2="-4.95" y2="-6.19" width="0.127" layer="21"/>
+<wire x1="4.15" y1="-4.39" x2="4.15" y2="-6.19" width="0.127" layer="21"/>
+<wire x1="5.65" y1="-4.39" x2="5.65" y2="-6.19" width="0.127" layer="21"/>
+<wire x1="-3.45" y1="-4.39" x2="-3.45" y2="-6.19" width="0.127" layer="21"/>
+<wire x1="-4.9" y1="6.81" x2="5.6" y2="6.81" width="0.127" layer="21"/>
+<wire x1="-4.9" y1="6.81" x2="-4.9" y2="3.81" width="0.127" layer="21"/>
+<wire x1="5.6" y1="6.81" x2="5.6" y2="3.81" width="0.127" layer="21"/>
+<pad name="P$1" x="-2.6" y="0.56" drill="2.25" shape="square"/>
+<pad name="P$2" x="3.4" y="0.56" drill="2.25" shape="square"/>
+</package>
 </packages>
 <symbols>
 <symbol name="CON_5P">
@@ -1021,7 +1041,8 @@ digikey[S9194-ND]</description>
 </devices>
 </deviceset>
 <deviceset name="JQ_P4P" prefix="CON" uservalue="yes">
-<description>&lt;b&gt;jst JQコネクタ4pin ベース付きポスト&lt;/b&gt;&lt;br&gt;</description>
+<description>&lt;b&gt;jst JQコネクタ4pin ベース付きポスト&lt;/b&gt;&lt;br&gt;
+基板対基板コネクタ</description>
 <gates>
 <gate name="G$1" symbol="CON_4P" x="0" y="0"/>
 </gates>
@@ -1040,7 +1061,8 @@ digikey[S9194-ND]</description>
 </devices>
 </deviceset>
 <deviceset name="JQ_S4P" prefix="CON" uservalue="yes">
-<description>&lt;b&gt;jst JQコネクタ4pin ソケット&lt;/b&gt;</description>
+<description>&lt;b&gt;jst JQコネクタ4pin ソケット&lt;/b&gt;&lt;br&gt;
+基板対基板コネクタ</description>
 <gates>
 <gate name="G$1" symbol="CON_4P" x="0" y="0"/>
 </gates>
@@ -1051,6 +1073,22 @@ digikey[S9194-ND]</description>
 <connect gate="G$1" pin="PIN2" pad="P$2"/>
 <connect gate="G$1" pin="PIN3" pad="P$3"/>
 <connect gate="G$1" pin="PIN4" pad="P$4"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="VL_2P">
+<gates>
+<gate name="G$1" symbol="CON_2P" x="2.54" y="0"/>
+</gates>
+<devices>
+<device name="" package="VL_2P">
+<connects>
+<connect gate="G$1" pin="PIN1" pad="P$1"/>
+<connect gate="G$1" pin="PIN2" pad="P$2"/>
 </connects>
 <technologies>
 <technology name=""/>
