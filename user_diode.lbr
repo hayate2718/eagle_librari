@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.4.2">
+<eagle version="9.6.2">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -176,6 +176,31 @@ Source: Comchip CGRM4001-G.pdf</description>
 100V 10A</description>
 <gates>
 <gate name="G$1" symbol="POWERDI_5_DIODE" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="POWERDI_5">
+<connects>
+<connect gate="G$1" pin="A1" pad="1"/>
+<connect gate="G$1" pin="A2" pad="2"/>
+<connect gate="G$1" pin="K" pad="3"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="SBR15U30SP5">
+<description>&lt;b&gt;Diodes スーパーバリア！（デデン！）ダイオード&lt;/b&gt;&lt;br&gt;
+SBR15U30SP5&lt;br&gt;
+逆耐圧 30V&lt;br&gt;
+平均順電流 15A&lt;br&gt;
+瞬間電流 280A&lt;br&gt;
+順方向電圧降下 0.49V&lt;br&gt;
+秋月電子　通販コード : I-07391&lt;br&gt;
+Trrも記載されてればいいのになぁ。多分SBRのもとのショットキー自体がそこそこはやくそれをさらに高性能にしたものだから多分はやいんじゃね</description>
+<gates>
+<gate name="G$1" symbol="POWERDI_5_DIODE" x="-2.54" y="0"/>
 </gates>
 <devices>
 <device name="" package="POWERDI_5">

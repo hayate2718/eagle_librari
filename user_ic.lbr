@@ -2231,6 +2231,33 @@ RESERVED=予約済み、使えないということ</description>
 <text x="-2.54" y="10.16" size="1.778" layer="95">&gt;NAME</text>
 <text x="-2.54" y="-10.16" size="1.778" layer="96">&gt;VALUE</text>
 </symbol>
+<symbol name="NJW1616T">
+<pin name="1_NC" x="-15.24" y="2.54" length="middle"/>
+<pin name="2_GND" x="-15.24" y="0" length="middle"/>
+<pin name="3_FB" x="-15.24" y="-2.54" length="middle"/>
+<pin name="6_SW" x="15.24" y="2.54" length="middle" rot="R180"/>
+<pin name="5_VIN" x="15.24" y="0" length="middle" rot="R180"/>
+<pin name="4_SHDN" x="15.24" y="-2.54" length="middle" rot="R180"/>
+<wire x1="-12.7" y1="5.08" x2="-12.7" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="-12.7" y1="-5.08" x2="12.7" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="12.7" y1="-5.08" x2="12.7" y2="5.08" width="0.254" layer="94"/>
+<wire x1="12.7" y1="5.08" x2="-12.7" y2="5.08" width="0.254" layer="94"/>
+<text x="-2.54" y="7.62" size="1.778" layer="95">&gt;NAME</text>
+<text x="-2.54" y="-7.62" size="1.778" layer="96">&gt;VALUE</text>
+</symbol>
+<symbol name="ADP151AUJZ">
+<pin name="1_VIN" x="-10.16" y="2.54" length="middle"/>
+<pin name="2_GND" x="-10.16" y="0" length="middle"/>
+<pin name="3_EN" x="-10.16" y="-2.54" length="middle"/>
+<pin name="5_VOUT" x="20.32" y="2.54" length="middle" rot="R180"/>
+<pin name="4_NC" x="20.32" y="-2.54" length="middle" rot="R180"/>
+<wire x1="-7.62" y1="5.08" x2="-7.62" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="-7.62" y1="-5.08" x2="17.78" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="17.78" y1="-5.08" x2="17.78" y2="5.08" width="0.254" layer="94"/>
+<wire x1="17.78" y1="5.08" x2="-7.62" y2="5.08" width="0.254" layer="94"/>
+<text x="0" y="7.62" size="1.778" layer="95">&gt;NAME</text>
+<text x="0" y="-7.62" size="1.778" layer="96">&gt;VALUE</text>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="14PIN_NAND" prefix="NAND" uservalue="yes">
@@ -3439,6 +3466,50 @@ RESERVED = 予約済みのピン、利用不可</description>
 <connect gate="G$1" pin="K" pad="3"/>
 <connect gate="G$1" pin="OUT" pad="5"/>
 <connect gate="G$1" pin="VCC" pad="6"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="NJW1616T" prefix="IC" uservalue="yes">
+<description>&lt;b&gt;新日本無線 降圧スイッチングレギュレータIC NJM1616T&lt;/b&gt;&lt;br&gt;
+秋月電子　通販コード : I-15765</description>
+<gates>
+<gate name="G$1" symbol="NJW1616T" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="SOT23-6">
+<connects>
+<connect gate="G$1" pin="1_NC" pad="1"/>
+<connect gate="G$1" pin="2_GND" pad="2"/>
+<connect gate="G$1" pin="3_FB" pad="3"/>
+<connect gate="G$1" pin="4_SHDN" pad="4"/>
+<connect gate="G$1" pin="5_VIN" pad="5"/>
+<connect gate="G$1" pin="6_SW" pad="6"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="ADP151AUJZ" prefix="IC" uservalue="yes">
+<description>&lt;b&gt;アナログデバイセズ　超低ノイズ3.3V出力リニアレギュレータ&lt;/b&gt;&lt;br&gt;
+max current = 200 [mA]&lt;br&gt;
+秋月電子　通販コード : I-14180</description>
+<gates>
+<gate name="G$1" symbol="ADP151AUJZ" x="-5.08" y="0"/>
+</gates>
+<devices>
+<device name="" package="SOT23-5">
+<connects>
+<connect gate="G$1" pin="1_VIN" pad="1"/>
+<connect gate="G$1" pin="2_GND" pad="2"/>
+<connect gate="G$1" pin="3_EN" pad="3"/>
+<connect gate="G$1" pin="4_NC" pad="4"/>
+<connect gate="G$1" pin="5_VOUT" pad="5"/>
 </connects>
 <technologies>
 <technology name=""/>
