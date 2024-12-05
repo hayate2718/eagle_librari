@@ -36,7 +36,7 @@
 <layer number="26" name="bNames" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="27" name="tValues" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="28" name="bValues" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="29" name="tStop" color="7" fill="3" visible="no" active="yes"/>
+<layer number="29" name="tStop" color="7" fill="3" visible="yes" active="yes"/>
 <layer number="30" name="bStop" color="7" fill="6" visible="no" active="yes"/>
 <layer number="31" name="tCream" color="7" fill="4" visible="no" active="yes"/>
 <layer number="32" name="bCream" color="7" fill="5" visible="no" active="yes"/>
@@ -52,7 +52,7 @@
 <layer number="42" name="bRestrict" color="1" fill="10" visible="yes" active="yes"/>
 <layer number="43" name="vRestrict" color="2" fill="10" visible="yes" active="yes"/>
 <layer number="44" name="Drills" color="7" fill="1" visible="no" active="yes"/>
-<layer number="45" name="Holes" color="7" fill="1" visible="no" active="yes"/>
+<layer number="45" name="Holes" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="46" name="Milling" color="3" fill="1" visible="no" active="yes"/>
 <layer number="47" name="Measures" color="7" fill="1" visible="no" active="yes"/>
 <layer number="48" name="Document" color="7" fill="1" visible="yes" active="yes"/>
@@ -153,6 +153,26 @@
 <vertex x="0" y="38"/>
 </polygon>
 </package>
+<package name="DCC5923L">
+<wire x1="0" y1="0" x2="0" y2="58.5" width="0.127" layer="21"/>
+<wire x1="0" y1="58.5" x2="23" y2="58.5" width="0.127" layer="21"/>
+<wire x1="23" y1="58.5" x2="23" y2="0" width="0.127" layer="21"/>
+<wire x1="23" y1="0" x2="0" y2="0" width="0.127" layer="21"/>
+<polygon width="0.127" layer="29">
+<vertex x="1" y="57.5"/>
+<vertex x="22" y="57.5"/>
+<vertex x="22" y="1"/>
+<vertex x="1" y="1"/>
+</polygon>
+<hole x="3.88" y="3.85" drill="3.56"/>
+<hole x="19.12" y="3.85" drill="3.56"/>
+<hole x="19.12" y="54.65" drill="3.56"/>
+<hole x="3.88" y="54.65" drill="3.56"/>
+<circle x="3.88" y="54.65" radius="3.7" width="0.127" layer="39"/>
+<circle x="19.12" y="54.65" radius="3.7" width="0.127" layer="39"/>
+<circle x="3.88" y="3.85" radius="3.7" width="0.127" layer="39"/>
+<circle x="19.12" y="3.85" radius="3.7" width="0.127" layer="39"/>
+</package>
 </packages>
 <symbols>
 <symbol name="ONSEN">
@@ -160,8 +180,8 @@
 <wire x1="1.27" y1="1.778" x2="0" y2="3.048" width="0.254" layer="94" curve="90"/>
 <wire x1="0" y1="3.048" x2="-1.27" y2="4.318" width="0.254" layer="94" curve="-90"/>
 <wire x1="-1.27" y1="4.318" x2="0" y2="5.588" width="0.254" layer="94" curve="-90"/>
-<text x="-5.08" y="-2.54" size="1.27" layer="94">&gt;NAME</text>
-<text x="-5.08" y="-5.08" size="1.27" layer="94">&gt;VALUE</text>
+<text x="-5.08" y="-2.54" size="1.27" layer="95">&gt;NAME</text>
+<text x="-5.08" y="-5.08" size="1.27" layer="96">&gt;VALUE</text>
 <wire x1="-2.54" y1="0.508" x2="-1.27" y2="1.778" width="0.254" layer="94" curve="90"/>
 <wire x1="-1.27" y1="1.778" x2="-2.54" y2="3.048" width="0.254" layer="94" curve="90"/>
 <wire x1="-2.54" y1="3.048" x2="-3.81" y2="4.318" width="0.254" layer="94" curve="-90"/>
@@ -240,6 +260,22 @@
 </gates>
 <devices>
 <device name="" package="38X38SQ">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="DCC5923L">
+<description>&lt;b&gt;DCC5923L&lt;/b&gt;&lt;br&gt;
+ALPHA &lt;br&gt;
+58.5x23&lt;br&gt;
+高さ設定可</description>
+<gates>
+<gate name="G$1" symbol="ONSEN" x="0" y="-2.54"/>
+</gates>
+<devices>
+<device name="" package="DCC5923L">
 <technologies>
 <technology name=""/>
 </technologies>
