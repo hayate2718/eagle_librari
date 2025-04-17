@@ -215,7 +215,7 @@
 </deviceset>
 <deviceset name="TAKUTOSUITTI2">
 <description>&lt;b&gt;表面実装タクトスイッチ&lt;/b&gt;&lt;br&gt;
-秋月電子通称通販コード[P-14888]</description>
+秋月電子通称通販コード[114888]</description>
 <gates>
 <gate name="G$1" symbol="TAKUTOSUITTI2" x="0" y="0"/>
 </gates>
@@ -255,7 +255,7 @@
 </deviceset>
 <deviceset name="DIPSW4" prefix="SW" uservalue="yes">
 <description>&lt;b&gt;OTAX 表面実装4接点DIPスイッチ&lt;/b&gt;&lt;br&gt;
-秋月電子　通販コード : P-08929</description>
+秋月電子　通販コード : 108929</description>
 <gates>
 <gate name="G$1" symbol="DIP04" x="0" y="0"/>
 </gates>
